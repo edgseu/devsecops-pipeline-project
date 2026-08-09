@@ -49,7 +49,7 @@ jobs:
           kyverno apply k8s/policies/require-image-signature.yaml --resource .github/fixtures/django-policy-pod.yaml --registry --warn-no-pass --warn-exit-code 1
 
       - name: Checkov Kubernetes Scan
-        uses: bridgecrewio/checkov-action@7b972723c44fb3d256283fac96fae5d7c1894bb7 # v12
+        uses: bridgecrewio/checkov-action@9b70310bcd306d11740313070b940167d6b23085 # v12
         with:
           file: rendered-django.yaml
           framework: kubernetes

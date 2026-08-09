@@ -161,7 +161,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate and publish build provenance
-        uses: actions/attest@508db95dd578ae2727ebd6217d5ba78e4fbda05d # v4.2.1
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4.2.2
         with:
           subject-name: ${{ needs.build-scan-push.outputs.base-image }}
           subject-digest: ${{ needs.build-scan-push.outputs.image-digest }}
